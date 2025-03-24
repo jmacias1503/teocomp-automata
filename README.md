@@ -8,7 +8,7 @@
     "alphabet": ["a", "b"],
     "states": ["1", "2"],
     "initial_state": "1",
-    "final_state": "2",
+    "final_states": "2",
     "transitions": {
         "1": {
             "a": "1",
