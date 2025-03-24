@@ -5,7 +5,7 @@ import draw_automaton as drw
 
 def main():
     try:
-        with open("./automata.json", 'r') as f:
+        with open("/app/automata.json", 'r') as f:
             automaton = json.load(f)
             drw.draw(automaton)
     except FileNotFoundError:
