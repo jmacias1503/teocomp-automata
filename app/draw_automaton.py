@@ -24,4 +24,4 @@ def draw(frie_data):
       for symbol, to_state in transition.items():
           dot.edge(from_state, to_state, label=symbol)
   
-  dot.render('finite_automaton.gv', view=True)
+  dot.render('finite_automaton.gv')
