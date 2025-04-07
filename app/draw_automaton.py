@@ -1,12 +1,12 @@
 import json
 from graphviz import Digraph
 
-def draw(frie_data):
-  alphabet = frie_data.get("alphabet", [])
-  states = frie_data.get("states", [])
-  initial_state = frie_data.get("initial_state", "")
-  final_states = frie_data.get("final_states", [])
-  transitions = frie_data.get("transitions", {})
+def draw(automaton_data):
+  alphabet = automaton_data.get("alphabet", [])
+  states = automaton_data.get("states", [])
+  initial_state = automaton_data.get("initial_state", "")
+  final_states = automaton_data.get("final_states", [])
+  transitions = automaton_data.get("transitions", {})
   
   # Draw the automata
   dot = Digraph()
