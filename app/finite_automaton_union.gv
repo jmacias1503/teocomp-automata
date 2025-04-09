@@ -1,0 +1,22 @@
+digraph {
+	"(q0,A)"
+	"(q0,E)" [shape=doublecircle]
+	"(q1,A)"
+	"(q1,E)" [shape=doublecircle]
+	"(q2,A)" [shape=doublecircle]
+	"(q2,E)" [shape=doublecircle]
+	_start [label="" shape=none]
+	_start -> "(q0,A)"
+	"(q0,A)" -> "(q1,E)" [label=a]
+	"(q0,A)" -> "(q0,A)" [label=b]
+	"(q0,E)" -> "(q1,A)" [label=a]
+	"(q0,E)" -> "(q0,E)" [label=b]
+	"(q1,A)" -> "(q1,E)" [label=a]
+	"(q1,A)" -> "(q2,A)" [label=b]
+	"(q1,E)" -> "(q1,A)" [label=a]
+	"(q1,E)" -> "(q2,E)" [label=b]
+	"(q2,A)" -> "(q1,E)" [label=a]
+	"(q2,A)" -> "(q0,A)" [label=b]
+	"(q2,E)" -> "(q1,A)" [label=a]
+	"(q2,E)" -> "(q0,E)" [label=b]
+}

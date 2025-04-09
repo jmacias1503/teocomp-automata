@@ -1,0 +1,16 @@
+digraph {
+	q0
+	q1
+	q2
+	s0 [shape=doublecircle]
+	_start [label="" shape=none]
+	_start -> s0
+	q0 -> q1 [label=a]
+	q0 -> q0 [label=b]
+	q1 -> q1 [label=a]
+	q1 -> q2 [label=b]
+	q2 -> q1 [label=a]
+	q2 -> q0 [label=b]
+	s0 -> q1 [label=a]
+	s0 -> q0 [label=b]
+}
