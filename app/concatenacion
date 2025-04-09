@@ -1,0 +1,20 @@
+digraph {
+	"1_q0"
+	"1_q1"
+	"1_q2"
+	"2_A"
+	"2_E" [shape=doublecircle]
+	_start [label="" shape=none]
+	_start -> "1_q0"
+	"1_q0" -> "1_q1" [label=a]
+	"1_q0" -> "1_q0" [label=b]
+	"1_q1" -> "1_q1" [label=a]
+	"1_q1" -> "1_q2" [label=b]
+	"1_q2" -> "1_q1" [label=a]
+	"1_q2" -> "1_q0" [label=b]
+	"1_q2" -> "2_A" [label="ε"]
+	"2_A" -> "2_E" [label=a]
+	"2_A" -> "2_A" [label=b]
+	"2_E" -> "2_A" [label=a]
+	"2_E" -> "2_E" [label=b]
+}

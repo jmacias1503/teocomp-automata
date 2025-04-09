@@ -1,0 +1,16 @@
+{
+    "alphabet": ["a", "b"],
+    "states": ["A", "E"],
+    "initial_state": "A",
+    "final_states": ["E"],
+    "transitions": {
+        "A": {
+            "a": "E",
+            "b": "A"
+        },
+        "E": {
+            "a": "A",
+            "b": "E"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+digraph {
+	A
+	E
+	s0 [shape=doublecircle]
+	_start [label="" shape=none]
+	_start -> s0
+	A -> E [label=a]
+	A -> A [label=b]
+	E -> E [label=a]
+	E -> A [label=b]
+	s0 -> E [label=a]
+	s0 -> A [label=b]
+}
